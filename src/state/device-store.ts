@@ -58,13 +58,6 @@ export function deviceActionHandler(state: IDeviceState, action: DeviceAction): 
             if (detail) {
                 document.body.classList.add('modal-open');
 
-                setTimeout(() => {
-                    const carousel = document.getElementById('imageCarousel');
-                    if (carousel) {
-                        carousel.setAttribute('data-bs-ride', 'carousel');
-                    }
-                }, 100);
-
                 return {
                     ...state,
                     currentlySelectedDetail: detail,

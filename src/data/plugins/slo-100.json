@@ -54,7 +54,7 @@
     "addedIn": "3.1.0"
   },
   {
-    "name": "Soldano SLO-100",
+    "name": "Soldano\u00ae SLO-100\u00ae",
     "deviceType": "amp",
     "deviceTypeLabel": "Amplifier",
     "real": "Soldano SLO-100 X - Guitar Amplifier",
@@ -63,7 +63,7 @@
     "addedIn": "3.1.0"
   },
   {
-    "name": "SLO-100 Cabinet (M) & (ST)",
+    "name": "SLO-100 Cab (M) & (ST)",
     "deviceType": "cab",
     "deviceTypeLabel": "Cabinet",
     "real": "Soldano SLO-100 X - Cabinet",

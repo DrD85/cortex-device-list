@@ -3,25 +3,25 @@
         <thead>
             <tr>
                 <th scope="col" aut-sort="key: name; default: asc">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.name"></span>
                         <i class="bi bi-arrow-down-up ms-2 opacity-50"></i>
                     </div>
                 </th>
-                <th scope="col" aut-sort="key: real;" class="d-none d-lg-table-cell">
-                    <div class="d-flex align-items-center">
+                <th scope="col" aut-sort="key: real;" class="hidden lg:table-cell">
+                    <div class="flex items-center">
                         <span t="table.basedOnCaps"></span>
                         <i class="bi bi-arrow-down-up ms-2 opacity-50"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: deviceType">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.type"></span>
                         <i class="bi bi-arrow-down-up ms-2 opacity-50"></i>
                     </div>
                 </th>
-                <th scope="col" aut-sort="key: addedIn" class="d-none d-md-table-cell">
-                    <div class="d-flex align-items-center">
+                <th scope="col" aut-sort="key: addedIn" class="hidden md:table-cell">
+                    <div class="flex items-center">
                         <span t="table.corosVersion"></span>
                         <i class="bi bi-arrow-down-up ms-2 opacity-50"></i>
                     </div>
@@ -35,7 +35,7 @@
                            t="[placeholder]filters.searchDevices"
                            value.bind="filters[0].value">
                 </th>
-                <th class="d-none d-lg-table-cell">
+                <th class="hidden lg:table-cell">
                     <input type="text"
                            class="form-control"
                            placeholder="Search model..."
@@ -51,7 +51,7 @@
                         <option value="capture" t="deviceTypes.captures"></option>
                     </select>
                 </th>
-                <th class="d-none d-md-table-cell"></th>
+                <th class="hidden md:table-cell"></th>
             </tr>
         </thead>
 
@@ -59,12 +59,12 @@
             <!-- Amplifiers Section -->
             <tr class="table-section" if.bind="getDevicesByType($displayData, 'amp').length">
                 <td colspan="4" class="section-header" click.trigger="toggleSection('amp', $event)">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center gap-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
                             <span class="category-icon amp">
                                 <i class="bi bi-speaker"></i>
                             </span>
-                            <span class="fw-semibold" t="deviceTypes.amplifiers"></span>
+                            <span class="font-semibold" t="deviceTypes.amplifiers"></span>
                             <span class="text-muted">(${getDevicesByType($displayData, 'amp').length})</span>
                         </div>
                             <i class="bi ${ampCollapsed ? 'bi-chevron-right' : 'bi-chevron-down'} text-muted"></i>
@@ -75,7 +75,7 @@
                 if.bind="!ampCollapsed"
                 class="fade-in">
                 <td>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="flex items-center gap-2">
                         <span click.trigger="showDetail(device)" class="device-name">${device.name}</span>
                         <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
                            href="${getDetailForDevice(device).amazonAffiliateLink}"
@@ -86,26 +86,26 @@
                             <i class="bi bi-amazon"></i>
                         </a>
                     </div>
-                    <small class="d-block d-lg-none text-muted mt-1">${device.real}</small>
+                    <small class="block lg:hidden text-muted mt-1">${device.real}</small>
                 </td>
-                <td class="d-none d-lg-table-cell text-muted">${device.real}</td>
+                <td class="hidden lg:table-cell text-muted">${device.real}</td>
                 <td>
-                    <span class="badge bg-primary" t="deviceTypes.amplifier"></span>
+                    <span class="badge-type amp" t="deviceTypes.amplifier"></span>
                 </td>
-                <td class="d-none d-md-table-cell">
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                <td class="hidden md:table-cell">
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
 
             <!-- Cabinets Section -->
             <tr class="table-section" if.bind="getDevicesByType($displayData, 'cab').length">
                 <td colspan="4" class="section-header" click.trigger="toggleSection('cab', $event)">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center gap-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
                             <span class="category-icon cab">
                                 <i class="bi bi-box"></i>
                             </span>
-                            <span class="fw-semibold" t="deviceTypes.cabinets"></span>
+                            <span class="font-semibold" t="deviceTypes.cabinets"></span>
                             <span class="text-muted">(${getDevicesByType($displayData, 'cab').length})</span>
                         </div>
                         <i class="bi ${cabCollapsed ? 'bi-chevron-right' : 'bi-chevron-down'} text-muted"></i>
@@ -116,7 +116,7 @@
                 if.bind="!cabCollapsed"
                 class="fade-in">
                 <td>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="flex items-center gap-2">
                         <span click.trigger="showDetail(device)" class="device-name">${device.name}</span>
                         <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
                            href="${getDetailForDevice(device).amazonAffiliateLink}"
@@ -127,26 +127,26 @@
                             <i class="bi bi-amazon"></i>
                         </a>
                     </div>
-                    <small class="d-block d-lg-none text-muted mt-1">${device.real}</small>
+                    <small class="block lg:hidden text-muted mt-1">${device.real}</small>
                 </td>
-                <td class="d-none d-lg-table-cell text-muted">${device.real}</td>
+                <td class="hidden lg:table-cell text-muted">${device.real}</td>
                 <td>
-                    <span class="badge bg-success" t="deviceTypes.cabinet"></span>
+                    <span class="badge-type cab" t="deviceTypes.cabinet"></span>
                 </td>
-                <td class="d-none d-md-table-cell">
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                <td class="hidden md:table-cell">
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
 
             <!-- Effects Section -->
             <tr class="table-section" if.bind="getDevicesByType($displayData, 'effect').length">
                 <td colspan="4" class="section-header" click.trigger="toggleSection('effect', $event)">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center gap-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
                             <span class="category-icon effect">
                                 <i class="bi bi-sliders"></i>
                             </span>
-                            <span class="fw-semibold" t="deviceTypes.effects"></span>
+                            <span class="font-semibold" t="deviceTypes.effects"></span>
                             <span class="text-muted">(${getDevicesByType($displayData, 'effect').length})</span>
                         </div>
                         <i class="bi ${effectCollapsed ? 'bi-chevron-right' : 'bi-chevron-down'} text-muted"></i>
@@ -157,7 +157,7 @@
                 if.bind="!effectCollapsed"
                 class="fade-in">
                 <td>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="flex items-center gap-2">
                         <span click.trigger="showDetail(device)" class="device-name">${device.name}</span>
                         <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
                            href="${getDetailForDevice(device).amazonAffiliateLink}"
@@ -168,26 +168,26 @@
                             <i class="bi bi-amazon"></i>
                         </a>
                     </div>
-                    <small class="d-block d-lg-none text-muted mt-1">${device.real}</small>
+                    <small class="block lg:hidden text-muted mt-1">${device.real}</small>
                 </td>
-                <td class="d-none d-lg-table-cell text-muted">${device.real}</td>
+                <td class="hidden lg:table-cell text-muted">${device.real}</td>
                 <td>
-                    <span class="badge bg-info" t="deviceTypes.effect"></span>
+                    <span class="badge-type effect" t="deviceTypes.effect"></span>
                 </td>
-                <td class="d-none d-md-table-cell">
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                <td class="hidden md:table-cell">
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
 
             <!-- Captures Section -->
             <tr class="table-section" if.bind="getDevicesByType($displayData, 'capture').length">
                 <td colspan="4" class="section-header" click.trigger="toggleSection('capture', $event)">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center gap-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
                             <span class="category-icon capture">
                                 <i class="bi bi-record-circle"></i>
                             </span>
-                            <span class="fw-semibold" t="deviceTypes.captures"></span>
+                            <span class="font-semibold" t="deviceTypes.captures"></span>
                             <span class="text-muted">(${getDevicesByType($displayData, 'capture').length})</span>
                         </div>
                         <i class="bi ${captureCollapsed ? 'bi-chevron-right' : 'bi-chevron-down'} text-muted"></i>
@@ -198,7 +198,7 @@
                 if.bind="!captureCollapsed"
                 class="fade-in">
                 <td>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="flex items-center gap-2">
                         <span click.trigger="showDetail(device)" class="device-name">${device.name}</span>
                         <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
                            href="${getDetailForDevice(device).amazonAffiliateLink}"
@@ -209,26 +209,26 @@
                             <i class="bi bi-amazon"></i>
                         </a>
                     </div>
-                    <small class="d-block d-lg-none text-muted mt-1">${device.real}</small>
+                    <small class="block lg:hidden text-muted mt-1">${device.real}</small>
                 </td>
-                <td class="d-none d-lg-table-cell text-muted">${device.real}</td>
+                <td class="hidden lg:table-cell text-muted">${device.real}</td>
                 <td>
-                    <span class="badge bg-warning" t="deviceTypes.capture"></span>
+                    <span class="badge-type capture" t="deviceTypes.capture"></span>
                 </td>
-                <td class="d-none d-md-table-cell">
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                <td class="hidden md:table-cell">
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
 
             <!-- Plugins Section -->
             <tr class="table-section" if.bind="getPluginDevices($displayData).length">
                 <td colspan="4" class="section-header" click.trigger="toggleSection('plugins', $event)">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center gap-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
                             <span class="category-icon plugin">
                                 <i class="bi bi-puzzle"></i>
                             </span>
-                            <span class="fw-semibold" t="deviceTypes.paidPlugins"></span>
+                            <span class="font-semibold" t="deviceTypes.paidPlugins"></span>
                             <span class="text-muted">(${getPluginDevices($displayData).length})</span>
                         </div>
                         <i class="bi ${pluginsCollapsed ? 'bi-chevron-right' : 'bi-chevron-down'} text-muted"></i>
@@ -239,7 +239,7 @@
                 if.bind="!pluginsCollapsed"
                 class="fade-in">
                 <td>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="flex items-center gap-2">
                         <span click.trigger="showDetail(device)" class="device-name">${device.name}</span>
                         <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
                            href="${getDetailForDevice(device).amazonAffiliateLink}"
@@ -250,14 +250,14 @@
                             <i class="bi bi-amazon"></i>
                         </a>
                     </div>
-                    <small class="d-block d-lg-none text-muted mt-1">${device.real}</small>
+                    <small class="block lg:hidden text-muted mt-1">${device.real}</small>
                 </td>
-                <td class="d-none d-lg-table-cell text-muted">${device.real}</td>
+                <td class="hidden lg:table-cell text-muted">${device.real}</td>
                 <td>
-                    <span class="badge green">${device.deviceTypeLabel}</span>
+                    <span class="badge-type plugin">${device.deviceTypeLabel}</span>
                 </td>
-                <td class="d-none d-md-table-cell">
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                <td class="hidden md:table-cell">
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
         </tbody>

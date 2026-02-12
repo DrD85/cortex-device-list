@@ -6,8 +6,7 @@ import { CortexDevices } from './cortex-devices';
 
 import { AureliaTableConfiguration } from 'aurelia2-table';
 
-import 'bootstrap';
-import './styles.scss';
+import './styles.css';
 import en from './locales/en/translation.json';
 import { initialDeviceState, deviceActionHandler } from './state/device-store';
 

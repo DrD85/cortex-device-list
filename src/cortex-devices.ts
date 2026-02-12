@@ -52,6 +52,7 @@ import { IDeviceState, DeviceAction } from './state/device-store';
 })
 export class CortexDevices {
     private isDarkTheme = false;
+    public isNavOpen = false;
     private readonly store = resolve(IStore) as IStore<IDeviceState, DeviceAction>;
 
     public get state(): IDeviceState {
@@ -89,7 +90,6 @@ export class CortexDevices {
     private applyDarkTheme() {
         document.documentElement.setAttribute('data-theme', 'dark');
         document.body.setAttribute('data-theme', 'dark');
-        document.body.classList.add('dark-theme');
         this.isDarkTheme = true;
         localStorage.setItem('cortex-theme', 'dark');
     }
@@ -97,7 +97,6 @@ export class CortexDevices {
     private applyLightTheme() {
         document.documentElement.removeAttribute('data-theme');
         document.body.removeAttribute('data-theme');
-        document.body.classList.remove('dark-theme');
         this.isDarkTheme = false;
         localStorage.setItem('cortex-theme', 'light');
     }
@@ -111,7 +110,7 @@ export class CortexDevices {
     }
 
     modalBackdropClick(event) {
-        if (event.target.classList.contains('modal')) {
+        if (event.target.classList.contains('modal-overlay')) {
             this.modalClosed();
         }
     }

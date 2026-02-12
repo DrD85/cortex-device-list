@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Parallax",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Parallax X - Bass Amplifier",
+    "type": "bass",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Parallax Cab (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Parallax X - Cabinet",
+    "type": "bass",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  }
+]

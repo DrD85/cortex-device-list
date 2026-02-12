@@ -11,17 +11,17 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "@aurelia/i18n": "^2.0.0-beta.27",
-    "@aurelia/router": "^2.0.0-beta.27",
-    "@aurelia/state": "^2.0.0-beta.27",
-    "aurelia": "^2.0.0-beta.27",
-    "aurelia2-table": "^0.0.34",
-    "bootstrap": "^5.3.1"
+    "@aurelia/i18n": "^2.0.0-rc.0",
+    "@aurelia/router": "^2.0.0-rc.0",
+    "@aurelia/state": "^2.0.0-rc.0",
+    "aurelia": "^2.0.0-rc.0",
+    "aurelia2-table": "^0.0.37"
   },
   "devDependencies": {
-    "@aurelia/testing": "^2.0.0-beta.27",
-    "@aurelia/ts-jest": "^2.0.0-beta.27",
-    "@aurelia/webpack-loader": "^2.0.0-beta.27",
+    "@aurelia/testing": "^2.0.0-rc.0",
+    "@aurelia/ts-jest": "^2.0.0-rc.0",
+    "@aurelia/webpack-loader": "^2.0.0-rc.0",
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
@@ -39,11 +39,8 @@
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.49.0",
-    "sass-lint": "^1.13.1",
-    "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
-    "tailwindcss": "^3.2.0",
+    "tailwindcss": "^4.0.0",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "webpack": "^5.67.0",
@@ -53,9 +50,8 @@
   },
   "scripts": {
     "lint:js": "eslint src test --ext .js,.ts",
-    "lint:css": "sass-lint -c .sass-lint.yml \"src/**/*.scss\"",
     "lint:html": "htmlhint -c .htmlhintrc src",
-    "lint": "npm run lint:js && npm run lint:html && npm run lint:css",
+    "lint": "npm run lint:js && npm run lint:html",
     "pretest": "npm run lint",
     "start": "webpack serve",
     "build": "rimraf dist && webpack --env production",
@@ -65,7 +61,7 @@
   "jest": {
     "testEnvironment": "jsdom",
     "transform": {
-      "\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
+      "\\.(css|less|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
       "\\.(ts|html)$": "@aurelia/ts-jest"
     },
     "collectCoverage": true,

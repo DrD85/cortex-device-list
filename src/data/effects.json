@@ -210,7 +210,7 @@
     "type": ""
   },
   {
-    "name": "Analog Delay (Mono)",
+    "name": "Analog Delay (M)",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
@@ -224,14 +224,14 @@
     "type": ""
   },
   {
-    "name": "Slapback Delay (Mono)",
+    "name": "Slapback Delay (M)",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
     "type": ""
   },
   {
-    "name": "Digital Delay (Stereo & Mono)",
+    "name": "Digital Delay",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
@@ -245,7 +245,7 @@
     "type": ""
   },
   {
-    "name": "Ping Pong Delay",
+    "name": "Simple Ping Pong Delay",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
@@ -260,21 +260,21 @@
     "addedIn": "3.0.0"
   },
   {
-    "name": "Simple Delay (Stereo & Mono)",
+    "name": "Simple Delay",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
     "type": ""
   },
   {
-    "name": "Tape Delay (Stereo & Mono)",
+    "name": "Tape Delay",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
     "type": ""
   },
   {
-    "name": "Reverse Delay (M)",
+    "name": "Reverse Delay",
     "real": "",
     "deviceType": "delay",
     "deviceTypeLabel": "Delay",
@@ -358,7 +358,7 @@
     "type": ""
   },
   {
-    "name": "Spring (Stereo & Mono)",
+    "name": "Spring (ST)",
     "real": "",
     "deviceType": "reverb",
     "deviceTypeLabel": "Reverb",
@@ -372,7 +372,7 @@
     "type": ""
   },
   {
-    "name": "Legendary 87",
+    "name": "Legendary 87 (ST)",
     "real": "Universal Audio® 1176®",
     "deviceType": "compressor",
     "deviceTypeLabel": "Compressor",
@@ -386,7 +386,7 @@
     "type": ""
   },
   {
-    "name": "Opto Comp (Stereo)",
+    "name": "Opto Comp (ST)",
     "real": "",
     "deviceType": "compressor",
     "deviceTypeLabel": "Compressor",
@@ -400,7 +400,7 @@
     "type": ""
   },
   {
-    "name": "Solid State Comp (Stereo)",
+    "name": "Solid State Comp (ST)",
     "real": "SSL® Bus",
     "deviceType": "compressor",
     "deviceTypeLabel": "Compressor",
@@ -414,7 +414,7 @@
     "type": ""
   },
   {
-    "name": "VCA Comp (Stereo)",
+    "name": "VCA Comp (ST)",
     "real": "",
     "deviceType": "compressor",
     "deviceTypeLabel": "Compressor",
@@ -489,7 +489,7 @@
     "detailsId": "ce-2w"
   },
   {
-    "name": "Chief CE2W (Mono)",
+    "name": "Chief CE2W (M)",
     "real": "BOSS® CE-2W®",
     "deviceType": "modulation",
     "deviceTypeLabel": "Modulation",
@@ -504,7 +504,7 @@
     "type": ""
   },
   {
-    "name": "Chief DC2W (Mono)",
+    "name": "Chief DC2W (M)",
     "real": "BOSS® Dimension DC-2W®",
     "deviceType": "modulation",
     "deviceTypeLabel": "Modulation",
@@ -539,7 +539,7 @@
     "type": ""
   },
   {
-    "name": "Dream Chorus (Mono)",
+    "name": "Dream Chorus (M)",
     "real": "TC Electronic® Dreamscape®",
     "deviceType": "modulation",
     "deviceTypeLabel": "Modulation",
@@ -588,7 +588,7 @@
     "type": ""
   },
   {
-    "name": "NuVibes",
+    "name": "MX Vibes",
     "real": "",
     "deviceType": "modulation",
     "deviceTypeLabel": "Modulation",
@@ -883,5 +883,129 @@
     "deviceTypeLabel": "Synth",
     "type": "",
     "addedIn": "3.3.0"
+  },
+  {
+    "name": "Blossom (ST)",
+    "real": "",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "type": "",
+    "addedIn": "4.0.0"
+  },
+  {
+    "name": "Nordic Concert Hall (ST)",
+    "real": "",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "type": "",
+    "addedIn": "4.0.0"
+  },
+  {
+    "name": "Shimmer",
+    "real": "",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "type": ""
+  },
+  {
+    "name": "Studio Plate 70 (ST)",
+    "real": "",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "type": "",
+    "addedIn": "4.0.0"
+  },
+  {
+    "name": "Spring (M)",
+    "real": "",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "type": ""
+  },
+  {
+    "name": "Chief CS3",
+    "real": "BOSS® CS-3®",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "type": ""
+  },
+  {
+    "name": "Legendary 87 (S/C)",
+    "real": "Universal Audio® 1176®",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Opto Comp (S/C)",
+    "real": "",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Solid State Comp (S/C)",
+    "real": "SSL® Bus",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "VCA Comp (S/C)",
+    "real": "",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Env. filter (S/C)",
+    "real": "",
+    "deviceType": "filter",
+    "deviceTypeLabel": "Filter",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Adaptive Gate (S/C)",
+    "real": "",
+    "deviceType": "utility",
+    "deviceTypeLabel": "Utility",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Phase Doctor",
+    "real": "",
+    "deviceType": "utility",
+    "deviceTypeLabel": "Utility",
+    "type": "",
+    "addedIn": "4.0.0"
+  },
+  {
+    "name": "Doubler",
+    "real": "",
+    "deviceType": "utility",
+    "deviceTypeLabel": "Utility",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Transparent Blend",
+    "real": "",
+    "deviceType": "utility",
+    "deviceTypeLabel": "Utility",
+    "type": "",
+    "addedIn": "3.0.0"
+  },
+  {
+    "name": "Legendary 87",
+    "real": "Universal Audio® 1176®",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "type": ""
   }
 ]

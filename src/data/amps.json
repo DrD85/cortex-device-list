@@ -376,7 +376,7 @@
     "id": "amp-42347987",
     "detailsId": "mesa-jp2c",
     "image": "amp-42357987.jpg",
-    "name": "CA John's 2C Ch1",
+    "name": "CA John’s 2C Ch1",
     "real": "Mesa® Boogie® JP2C®",
     "deviceType": "amp",
     "type": "guitar",
@@ -389,7 +389,7 @@
     "id": "amp-42357987",
     "detailsId": "mesa-jp2c",
     "image": "amp-42357987.jpg",
-    "name": "CA John's 2C Ch2",
+    "name": "CA John’s 2C Ch2",
     "real": "Mesa® Boogie® JP2C®",
     "deviceType": "amp",
     "type": "guitar",
@@ -402,7 +402,7 @@
     "id": "amp-421747987",
     "detailsId": "mesa-jp2c",
     "image": "amp-42357987.jpg",
-    "name": "CA John's 2C Ch3",
+    "name": "CA John’s 2C Ch3",
     "real": "Mesa® Boogie® JP2C®",
     "deviceType": "amp",
     "type": "guitar",
@@ -515,7 +515,7 @@
     "id": "amp-36",
     "detailsId": "evh-5150",
     "image": "evh-iii-5150.jpeg",
-    "name": "EV101III Blue",
+    "name": "EV101IIIS Blue EL34 100W",
     "real": "EVH® 5150 III® 100S® EL34",
     "deviceType": "amp",
     "type": "guitar",
@@ -539,7 +539,7 @@
     "id": "amp-38",
     "detailsId": "evh-5150",
     "image": "evh-iii-5150.jpeg",
-    "name": "EV101III Red",
+    "name": "EV101IIIS Red EL34 100W",
     "real": "EVH® 5150 III® 100S® EL34",
     "deviceType": "amp",
     "type": "guitar",
@@ -642,7 +642,7 @@
   {
     "id": "amp-49",
     "image": "vox-ac15.jpeg",
-    "name": "UK C15 Boost",
+    "name": "UK C15 TopBoost",
     "real": "Vox® AC15®",
     "deviceType": "amp",
     "type": "guitar",
@@ -786,7 +786,7 @@
   {
     "id": "amp-61",
     "image": "fender-bassman-tweed.jpeg",
-    "name": "US Tweed Basslad Bright Jumped",
+    "name": "US Tweed Basslad Bright Patch",
     "real": "Fender® Bassman® Tweed",
     "deviceType": "amp",
     "type": "guitar",
@@ -808,7 +808,7 @@
   {
     "id": "amp-63",
     "image": "fender-bassman-tweed.jpeg",
-    "name": "US Tweed Basslad Normal Jumped",
+    "name": "US Tweed Basslad Normal Patch",
     "real": "Fender® Bassman® Tweed",
     "deviceType": "amp",
     "type": "guitar",
@@ -986,7 +986,7 @@
   {
     "id": "amp-84",
     "image": "fender-high-powered-tweed.jpeg",
-    "name": "US HP Tweed TWIN Bright",
+    "name": "US HP Tweed TWN Bright",
     "real": "Fender® High Power Tweed Twin 5F8-A®",
     "deviceType": "amp",
     "type": "guitar"
@@ -994,7 +994,7 @@
   {
     "id": "amp-85",
     "image": "fender-high-powered-tweed.jpeg",
-    "name": "US HP Tweed TWIN Bright Jumped",
+    "name": "US HP Tweed TWN Bright Patch",
     "real": "Fender® High Power Tweed Twin 5F8-A®",
     "deviceType": "amp",
     "type": "guitar"
@@ -1002,7 +1002,7 @@
   {
     "id": "amp-86",
     "image": "fender-high-powered-tweed.jpeg",
-    "name": "US HP Tweed TWIN Normal",
+    "name": "US HP Tweed TWN Normal",
     "real": "Fender® High Power Tweed Twin 5F8-A®",
     "deviceType": "amp",
     "type": "guitar"
@@ -1010,7 +1010,7 @@
   {
     "id": "amp-87",
     "image": "fender-high-powered-tweed.jpeg",
-    "name": "US HP Tweed TWIN Normal Jumped",
+    "name": "US HP Tweed TWN Normal Patch",
     "real": "Fender® High Power Tweed Twin 5F8-A®",
     "deviceType": "amp",
     "type": "guitar"

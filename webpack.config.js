@@ -7,21 +7,12 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 const cssLoader = 'css-loader';
 
-const sassLoader = {
-    loader: 'sass-loader',
-    options: {
-        sassOptions: {
-            includePaths: ['node_modules'],
-        },
-    },
-};
-
 const postcssLoader = {
     loader: 'postcss-loader',
     options: {
         postcssOptions: {
             plugins: [
-                //require('tailwindcss')('tailwind.config.js'),
+                require('@tailwindcss/postcss'),
                 'autoprefixer',
             ],
         },
@@ -106,10 +97,6 @@ module.exports = function (env, { analyze }) {
                 {
                     test: /\.css$/i,
                     use: ['style-loader', cssLoader, postcssLoader],
-                },
-                {
-                    test: /\.scss$/i,
-                    use: ['style-loader', cssLoader, postcssLoader, sassLoader],
                 },
                 {
                     test: /\.ts$/i,

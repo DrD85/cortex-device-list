@@ -62,14 +62,12 @@ export class AllTable {
                 break;
         }
         
-        console.log(`Toggling ${type}:`, this[`${type}Collapsed`]);
     }
 
     public getPluginDevices(devices: any[]): any[] {
         if (!devices || !Array.isArray(devices)) {
             return [];
         }
-        console.log(devices.filter(device => device?.requiresPlugin === true));
         return devices.filter(device => device?.requiresPlugin === true);
     }
 

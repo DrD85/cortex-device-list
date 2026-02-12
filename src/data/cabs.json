@@ -49,7 +49,7 @@
   },
   {
     "id": "cab-7",
-    "name": "112 Zila MiniMod RB '17",
+    "name": "112 Zila MiniMod RB ’17",
     "real": "Zilla® Mini Modern with Celestion® G12H150 Redback drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -57,7 +57,7 @@
   },
   {
     "id": "cab-8",
-    "name": "210 US TRMLX Oxf '63",
+    "name": "210 US TRMLX Oxf ’63",
     "real": "Fender® Tremolux® with Oxford® Alnico drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -73,7 +73,7 @@
   },
   {
     "id": "cab-10",
-    "name": "212 CA Recto V30 '98",
+    "name": "212 CA Recto V30 ’98",
     "real": "Mesa® Rectifier® with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -81,7 +81,7 @@
   },
   {
     "id": "cab-11",
-    "name": "212 Rols Jazz '87",
+    "name": "212 Rols Jazz ’87",
     "real": "Roland® JC-120®",
     "deviceType": "cab",
     "type": "guitar",
@@ -97,7 +97,7 @@
   },
   {
     "id": "cab-13",
-    "name": "212 UK C30 '65",
+    "name": "212 UK C30 ’65",
     "real": "VOX® AC30® Top Boost with Celestion® Alnico “Silver Bell” drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -105,7 +105,7 @@
   },
   {
     "id": "cab-14",
-    "name": "212 UK C30 GB '69",
+    "name": "212 UK C30 GB ’69",
     "real": "VOX® AC30® with Celestion® Pre-Rola Greenback Pulsonic drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -137,7 +137,7 @@
   },
   {
     "id": "cab-18",
-    "name": "212 Zila CB '16",
+    "name": "212 Zila CB ’16",
     "real": "Zilla® Cab with Celestion® Creamback G12H-75 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -145,7 +145,7 @@
   },
   {
     "id": "cab-19",
-    "name": "212 Zila Fatboy V30 02",
+    "name": "212 Zila Fatboy V30 '02",
     "real": "Zilla® Fatboy 2x12 2002 with Celestion® UK Vintage 30",
     "deviceType": "cab",
     "type": "guitar",
@@ -153,7 +153,7 @@
   },
   {
     "id": "cab-20",
-    "name": "212 Zila Open Gold '19",
+    "name": "212 Zila Open Gold ’19",
     "real": "Zilla® Open with Celestion® Alnico Gold drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -193,7 +193,7 @@
   },
   {
     "id": "cab-25",
-    "name": "412 Brit 60A GB75Hz '89",
+    "name": "412 Brit 60A GB75Hz ’89",
     "real": "Marshall® 1960A® with Celestion® G12M25 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -201,7 +201,7 @@
   },
   {
     "id": "cab-26",
-    "name": "412 Brit 60B GB '71",
+    "name": "412 Brit 60B GB ’71",
     "real": "Marshall® 1960B® with Celestion® Pulsonic Greenback drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -217,7 +217,7 @@
   },
   {
     "id": "cab-28",
-    "name": "412 Brit 60B V30 '95",
+    "name": "412 Brit 60B V30 ’95",
     "real": "Marshall® 1960B® with Celestion® Marshall® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -225,7 +225,7 @@
   },
   {
     "id": "cab-29",
-    "name": "412 Brit Silver B 70w '87",
+    "name": "412 Brit Silver B 70w ’87",
     "real": "Marshall® 2551B® with Celestion® drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -233,7 +233,7 @@
   },
   {
     "id": "cab-30",
-    "name": "412 Brit 60A GB75Hz '89",
+    "name": "412 Brit 60A GB75Hz ’89",
     "real": "Marshall® 1960A® with Celestion® G12M25 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -241,7 +241,7 @@
   },
   {
     "id": "cab-31",
-    "name": "412 CA Stand OS A V30 '01",
+    "name": "412 CA Stand OS A V30 ’01",
     "real": "Mesa® Standard OS Angled with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -257,7 +257,7 @@
   },
   {
     "id": "cab-33",
-    "name": "412 CA Trad A V30 '92 ",
+    "name": "412 CA Trad A V30 ’92",
     "real": "Mesa® Traditional Angled with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -265,7 +265,7 @@
   },
   {
     "id": "cab-34",
-    "name": "412 CA Trad S H30 '15",
+    "name": "412 CA Trad S H30 ’15",
     "real": "Mesa® Traditional Straight with Celestion® G12H30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -281,7 +281,7 @@
   },
   {
     "id": "cab-36",
-    "name": "412 D-Cell Front V30 '04",
+    "name": "412 D-Cell Front V30 ’04",
     "real": "Diezel® Front Loaded with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -305,7 +305,7 @@
   },
   {
     "id": "cab-39",
-    "name": "412 Range PPC V30 '02",
+    "name": "412 Range PPC V30 ’02",
     "real": "Orange® PPC412 with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -313,7 +313,7 @@
   },
   {
     "id": "cab-40",
-    "name": "412 Range PPC V30 '03",
+    "name": "412 Range PPC V30 ’03",
     "real": "Orange® PPC412 with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -329,7 +329,7 @@
   },
   {
     "id": "cab-42",
-    "name": "412 Zila Cust V30 '12 V2",
+    "name": "412 Zila Cust V30 ’12 V2",
     "real": "Zilla® Custom with Celestion® Vintage 30 drivers",
     "deviceType": "cab",
     "type": "guitar",
@@ -345,15 +345,15 @@
   },
   {
     "id": "cab-44",
-    "name": "212 Darkglass® Neo",
-    "real": "Darkglass® D212N® with custom Eminence® ceramic drivers",
+    "name": "210 Darkglass® Neo",
+    "real": "Darkglass® DG212N® with custom Eminence® neodymium drivers",
     "deviceType": "cab",
     "type": "bass",
     "irAuthor": "Third party"
   },
   {
     "id": "cab-45",
-    "name": "410 US Basslad P10Q '16",
+    "name": "410 US Basslad P10Q ’16",
     "real": "Fender® Bassman® with Jensen® P10Q drivers",
     "deviceType": "cab",
     "type": "bass",
@@ -361,7 +361,7 @@
   },
   {
     "id": "cab-46",
-    "name": "412 Brit 35A GB55Hz '75",
+    "name": "412 Brit 35A GB55Hz ’75",
     "real": "Marshall® 1935A® with Celestion® G12M25 drivers",
     "deviceType": "cab",
     "type": "bass",
@@ -559,5 +559,101 @@
     "type": "bass",
     "irAuthor": "Neural DSP",
     "addedIn": "3.3.0"
+  },
+  {
+    "id": "cab-69",
+    "name": "210C Darkglass®",
+    "real": "Darkglass® D210C® with custom Eminence® ceramic drivers",
+    "deviceType": "cab",
+    "type": "bass",
+    "irAuthor": "Third party"
+  },
+  {
+    "id": "cab-70",
+    "name": "412 Brit TV GB75Hz ’69",
+    "real": "Marshall® 1960TV® with Celestion® G12M25 drivers",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Third party"
+  },
+  {
+    "id": "cab-71",
+    "name": "412 CA Stand OS S V30 90s",
+    "real": "Mesa® Standard OS Straight with Celestion® Vintage 30 drivers",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Third party"
+  },
+  {
+    "id": "cab-72",
+    "name": "Dual (M)",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.0.0"
+  },
+  {
+    "id": "cab-73",
+    "name": "Dual (M) Lite",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.1.0"
+  },
+  {
+    "id": "cab-74",
+    "name": "Dual (ST)",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.0.0"
+  },
+  {
+    "id": "cab-75",
+    "name": "Dual (ST) Lite",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.1.0"
+  },
+  {
+    "id": "cab-76",
+    "name": "Single (M)",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.0.0"
+  },
+  {
+    "id": "cab-77",
+    "name": "Single (M) Lite",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.1.0"
+  },
+  {
+    "id": "cab-78",
+    "name": "Single (ST)",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.0.0"
+  },
+  {
+    "id": "cab-79",
+    "name": "Single (ST) Lite",
+    "real": "IR Loader",
+    "deviceType": "cab",
+    "type": "guitar",
+    "irAuthor": "Neural DSP",
+    "addedIn": "2.1.0"
   }
 ]

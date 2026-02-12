@@ -3,26 +3,26 @@
         <thead>
             <tr>
                 <th scope="col" aut-sort="key: name; default: asc">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.name"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: real">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.basedOn"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: type">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.instrument"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" t="table.matchingCabs"></th>
                 <th scope="col" aut-sort="key: addedIn">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.addedInCoros"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
@@ -58,29 +58,29 @@
         <tbody>
             <tr repeat.for="device of $displayData">
                 <td>
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span click.trigger="showDetail(device)" class="device-name" role="button">${device.name}</span>
-                        <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink" 
-                           href="${getDetailForDevice(device).amazonAffiliateLink}" 
-                           target="_blank" 
-                           class="ms-2 text-decoration-none"
+                        <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
+                           href="${getDetailForDevice(device).amazonAffiliateLink}"
+                           target="_blank"
+                           class="ms-2 no-underline"
                            title="Buy on Amazon"
                            t="[title]actions.buyOnAmazon">
                             <i class="bi bi-amazon text-warning"></i>
                         </a>
                     </div>
                 </td>
-                <td class="text-nowrap">${device.real}</td>
+                <td class="whitespace-nowrap">${device.real}</td>
                 <td>
-                    <span class="badge bg-primary text-white">${device.type}</span>
+                    <span class="badge-type amp">${device.type}</span>
                 </td>
                 <td>
-                    <ul class="list-unstyled mb-0" if.bind="device.cabs">
+                    <ul class="list-none mb-0" if.bind="device.cabs" style="padding: 0; margin: 0;">
                         <li repeat.for="cab of device.cabs">${getItem(cab, 'cabs').name}</li>
                     </ul>
                 </td>
                 <td>
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
         </tbody>

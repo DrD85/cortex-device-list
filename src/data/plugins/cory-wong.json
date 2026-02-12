@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Cory Wong D.I. Funk Console",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Cory Wong X - Amp 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Clean Machine",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Cory Wong X - Amp 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Amp Snob",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Cory Wong X - Amp 3",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong Cab 1 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Cory Wong X - Cabinet 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong Cab 2 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Cory Wong X - Cabinet 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong Cab 3 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Cory Wong X - Cabinet 3",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong Wah",
+    "deviceType": "wah",
+    "deviceTypeLabel": "Wah",
+    "real": "Archetype: Cory Wong X - Wah",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Postal Service",
+    "deviceType": "filter",
+    "deviceTypeLabel": "Filter",
+    "real": "Archetype: Cory Wong X - Filter",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The 4th Position Compressor",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "real": "Archetype: Cory Wong X - Compressor",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Tuber",
+    "deviceType": "overdrive",
+    "deviceTypeLabel": "Overdrive",
+    "real": "Archetype: Cory Wong X - Overdrive 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Big Rig Overdrive",
+    "deviceType": "overdrive",
+    "deviceTypeLabel": "Overdrive",
+    "real": "Archetype: Cory Wong X - Overdrive 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The 80s",
+    "deviceType": "modulation",
+    "deviceTypeLabel": "Modulation",
+    "real": "Archetype: Cory Wong X - Modulation",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong Delay-y-y",
+    "deviceType": "delay",
+    "deviceTypeLabel": "Delay",
+    "real": "Archetype: Cory Wong X - Delay",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Wash",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "real": "Archetype: Cory Wong X - Reverb",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Cory Wong The Wash Shimmer",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "real": "Archetype: Cory Wong X - Reverb Shimmer",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  }
+]

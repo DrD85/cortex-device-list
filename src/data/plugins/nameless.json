@@ -1,6 +1,6 @@
 [
     {
-      "name": "Fortin Zuul",
+      "name": "Nameless Zuul",
       "deviceType": "utility",
       "deviceTypeLabel": "Utility",
       "real": "Fortin Nameless Suite X - Zuul",
@@ -9,7 +9,7 @@
       "addedIn": "3.1.0"
     },
     {
-      "name": "Fortin Hexdrive",
+      "name": "Nameless Hexdrive",
       "deviceType": "overdrive",
       "deviceTypeLabel": "Overdrive",
       "real": "Fortin Nameless Suite X - Hexdrive",
@@ -18,7 +18,7 @@
       "addedIn": "3.1.0"
     },
     {
-      "name": "Fortin Grind",
+      "name": "Nameless Grind",
       "deviceType": "overdrive",
       "deviceTypeLabel": "Overdrive",
       "real": "Fortin Nameless Suite X - Grind",
@@ -45,7 +45,7 @@
       "addedIn": "3.1.0"
     },
     {
-      "name": "Fortin Nameless",
+      "name": "Fortin\u00ae Nameless",
       "deviceType": "amp",
       "deviceTypeLabel": "Amplifier",
       "real": "Fortin Nameless Suite X - Guitar Amplifier",
@@ -54,7 +54,7 @@
       "addedIn": "3.1.0"
     },
     {
-      "name": "Nameless Cab (M) & (ST)",
+      "name": "Nameless Cab (M) & (S)",
       "deviceType": "cab",
       "deviceTypeLabel": "Cabinet",
       "real": "Fortin Nameless Suite X - Cabinet",

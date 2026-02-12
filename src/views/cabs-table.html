@@ -3,26 +3,26 @@
         <thead>
             <tr>
                 <th scope="col" aut-sort="key: name; default: asc">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.name"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: real;">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.basedOn"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" t="table.irsBy"></th>
                 <th scope="col" aut-sort="key: type;">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.instrument"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: addedIn">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.addedInCoros"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
@@ -67,13 +67,13 @@
                 <td>
                     <span click.trigger="showDetail(device)" class="device-name" role="button">${device.name}</span>
                 </td>
-                <td class="text-nowrap">${device.real}</td>
+                <td class="whitespace-nowrap">${device.real}</td>
                 <td>${device.irAuthor}</td>
                 <td>
-                    <span class="badge bg-light text-dark">${device.type}</span>
+                    <span class="badge-subtle">${device.type}</span>
                 </td>
                 <td>
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
         </tbody>

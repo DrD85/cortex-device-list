@@ -3,25 +3,25 @@
         <thead>
             <tr>
                 <th scope="col" aut-sort="key: name; default: asc">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.name"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: real">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.basedOn"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: deviceType">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.type"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: addedIn">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.addedInCoros"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
@@ -60,13 +60,12 @@
         </thead>
 
         <tbody>
-            <!-- Repeat this pattern for each device type -->
             <template repeat.for="type of ['pitch', 'overdrive', 'modulation', 'amplifier', 'cabinet', 'delay', 'reverb', 'compressor']">
                 <tr class="table-section" if.bind="getDevicesByType($displayData, type).length">
                     <td colspan="4" class="section-header" click.trigger="toggleSection(type, $event)" style="cursor: pointer;">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <i class="bi ${type === 'pitch' ? 'bi-music-note' : 
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="bi ${type === 'pitch' ? 'bi-music-note' :
                                              type === 'overdrive' ? 'bi-lightning' :
                                              type === 'modulation' ? 'bi-wave' :
                                              type === 'amplifier' ? 'bi-speaker' :
@@ -84,15 +83,15 @@
                     <td>
                         <span click.trigger="showDetail(device)" class="device-name" role="button">${device.name}</span>
                     </td>
-                    <td class="text-nowrap">${device.real}</td>
+                    <td class="whitespace-nowrap">${device.real}</td>
                     <td>
-                        <span class="badge bg-primary text-white" t.bind="getTypeLabelKey(type)"></span>
+                        <span class="badge-type plugin" t.bind="getTypeLabelKey(type)"></span>
                     </td>
                     <td>
-                        <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                        <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                     </td>
                 </tr>
             </template>
         </tbody>
     </table>
-</div> 
+</div>

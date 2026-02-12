@@ -3,31 +3,31 @@
         <thead>
             <tr>
                 <th scope="col" aut-sort="key: name; default: asc">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.name"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: real;">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.basedOn"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: deviceTypeLabel">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.deviceType"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: type">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.instrument"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
                 </th>
                 <th scope="col" aut-sort="key: addedIn">
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span t="table.addedInCoros"></span>
                         <i class="bi bi-arrow-down-up ms-1"></i>
                     </div>
@@ -79,27 +79,27 @@
         <tbody>
             <tr repeat.for="device of $displayData">
                 <td>
-                    <div class="d-flex align-items-center">
+                    <div class="flex items-center">
                         <span click.trigger="showDetail(device)" class="device-name" role="button">${device.name}</span>
-                        <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink" 
-                           href="${getDetailForDevice(device).amazonAffiliateLink}" 
-                           target="_blank" 
-                           class="ms-2 text-decoration-none"
+                        <a if.bind="getDetailForDevice(device)?.amazonAffiliateLink"
+                           href="${getDetailForDevice(device).amazonAffiliateLink}"
+                           target="_blank"
+                           class="ms-2 no-underline"
                            title="Buy on Amazon"
                            t="[title]actions.buyOnAmazon">
                             <i class="bi bi-amazon text-warning"></i>
                         </a>
                     </div>
                 </td>
-                <td class="text-nowrap">${device.real}</td>
+                <td class="whitespace-nowrap">${device.real}</td>
                 <td>
-                    <span class="badge bg-info text-white">${device.deviceTypeLabel}</span>
+                    <span class="badge-type effect">${device.deviceTypeLabel}</span>
                 </td>
                 <td>
-                    <span class="badge bg-light text-dark">${device.type}</span>
+                    <span class="badge-subtle">${device.type}</span>
                 </td>
                 <td>
-                    <span if.bind="device.addedIn" class="badge purple">${device.addedIn}</span>
+                    <span if.bind="device.addedIn" class="badge-version">${device.addedIn}</span>
                 </td>
             </tr>
         </tbody>

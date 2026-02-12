@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Nolly Clean",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Nolly X - Amp 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Crunch",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Nolly X - Amp 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Rhythm",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Nolly X - Amp 3",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Lead",
+    "deviceType": "amp",
+    "deviceTypeLabel": "Amplifier",
+    "real": "Archetype: Nolly X - Amp 4",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Cab 1 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Nolly X - Cabinet 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Cab 2 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Nolly X - Cabinet 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Cab 3 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Nolly X - Cabinet 3",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Cab 4 (M) & (ST)",
+    "deviceType": "cab",
+    "deviceTypeLabel": "Cabinet",
+    "real": "Archetype: Nolly X - Cabinet 4",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Compressor",
+    "deviceType": "compressor",
+    "deviceTypeLabel": "Compressor",
+    "real": "Archetype: Nolly X - Compressor",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Overdrive-1",
+    "deviceType": "overdrive",
+    "deviceTypeLabel": "Overdrive",
+    "real": "Archetype: Nolly X - Overdrive 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Overdrive-2",
+    "deviceType": "overdrive",
+    "deviceTypeLabel": "Overdrive",
+    "real": "Archetype: Nolly X - Overdrive 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Graphic-9",
+    "deviceType": "eq",
+    "deviceTypeLabel": "EQ",
+    "real": "Archetype: Nolly X - Graphic EQ",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Delay-1 (M)",
+    "deviceType": "delay",
+    "deviceTypeLabel": "Delay",
+    "real": "Archetype: Nolly X - Delay 1",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Delay-2",
+    "deviceType": "delay",
+    "deviceTypeLabel": "Delay",
+    "real": "Archetype: Nolly X - Delay 2",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  },
+  {
+    "name": "Nolly Reverb",
+    "deviceType": "reverb",
+    "deviceTypeLabel": "Reverb",
+    "real": "Archetype: Nolly X - Reverb",
+    "type": "guitar",
+    "requiresPlugin": true,
+    "addedIn": "3.1.0"
+  }
+]

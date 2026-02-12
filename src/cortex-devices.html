@@ -1,76 +1,66 @@
 <div class="app-shell">
     <header class="app-header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a load="all" class="navbar-brand">
-                    <div class="brand-logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <div class="brand-text">
-                        <span class="brand-title" t="brand.title"></span>
-                        <span class="brand-subtitle" t="brand.subtitle"></span>
-                    </div>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarHeader">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="theme-toggle nav-link" href="javascript:void(0);" click.trigger="toggleTheme()">
-                                <i class="bi bi-moon-fill"></i>
-                                <i class="bi bi-sun-fill"></i>
-                                <span t="nav.theme"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/Vheissu" target="_blank" rel="noopener" external>
-                                <i class="bi bi-github"></i>
-                                <span t="nav.github"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:dwaynecharrington@gmail.com" external>
-                                <i class="bi bi-envelope"></i>
-                                <span t="nav.contact"></span>
-                            </a>
-                        </li>
-                    </ul>
+        <div class="header-inner">
+            <a load="all" class="navbar-brand">
+                <div class="brand-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
                 </div>
-            </div>
-        </nav>
+                <div class="brand-text">
+                    <span class="brand-title" t="brand.title"></span>
+                    <span class="brand-subtitle" t="brand.subtitle"></span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" type="button" click.trigger="isNavOpen = !isNavOpen" aria-label="Toggle navigation">
+                <i class="bi ${isNavOpen ? 'bi-x-lg' : 'bi-list'}" style="font-size: 1.25rem;"></i>
+            </button>
+
+            <nav class="header-nav ${isNavOpen ? 'nav-open' : ''}">
+                <a class="theme-toggle nav-link" href="javascript:void(0);" click.trigger="toggleTheme()">
+                    <i class="bi bi-moon-fill"></i>
+                    <i class="bi bi-sun-fill"></i>
+                    <span t="nav.theme"></span>
+                </a>
+                <a class="nav-link" href="https://github.com/Vheissu" target="_blank" rel="noopener" external>
+                    <i class="bi bi-github"></i>
+                    <span t="nav.github"></span>
+                </a>
+                <a class="nav-link" href="mailto:dwaynecharrington@gmail.com" external>
+                    <i class="bi bi-envelope"></i>
+                    <span t="nav.contact"></span>
+                </a>
+            </nav>
+        </div>
     </header>
 
     <main class="app-content">
         <nav class="nav-tabs-modern">
             <a class="nav-tab" load="all" active.class="active">
-                <i class="bi bi-grid-3x3-gap d-none d-sm-inline"></i>
+                <i class="bi bi-grid-3x3-gap hidden sm:inline"></i>
                 <span t="nav.all"></span>
             </a>
             <a class="nav-tab" load="amps" active.class="active">
-                <i class="bi bi-speaker d-none d-sm-inline"></i>
+                <i class="bi bi-speaker hidden sm:inline"></i>
                 <span t="nav.amps"></span>
             </a>
             <a class="nav-tab" load="cabs" active.class="active">
-                <i class="bi bi-box d-none d-sm-inline"></i>
+                <i class="bi bi-box hidden sm:inline"></i>
                 <span t="nav.cabs"></span>
             </a>
             <a class="nav-tab" load="effects" active.class="active">
-                <i class="bi bi-sliders d-none d-sm-inline"></i>
+                <i class="bi bi-sliders hidden sm:inline"></i>
                 <span t="nav.effects"></span>
             </a>
             <a class="nav-tab" load="captures" active.class="active">
-                <i class="bi bi-record-circle d-none d-sm-inline"></i>
+                <i class="bi bi-record-circle hidden sm:inline"></i>
                 <span t="nav.captures"></span>
             </a>
             <a class="nav-tab" load="plugins" active.class="active">
-                <i class="bi bi-puzzle d-none d-sm-inline"></i>
+                <i class="bi bi-puzzle hidden sm:inline"></i>
                 <span t="nav.plugins"></span>
             </a>
         </nav>
@@ -80,70 +70,35 @@
 </div>
 
 <!-- Detail Modal -->
-<div class="modal fade ${state.showDetailsModal ? 'show' : ''}"
-     tabindex="-1"
-     role="dialog"
-     aria-labelledby="deviceDetailModal"
-     aria-hidden="${!state.showDetailsModal}"
-     style.bind="state.showDetailsModal ? 'display: block;' : ''"
+<div class="modal-overlay"
+     if.bind="state.showDetailsModal"
      click.trigger="modalBackdropClick($event)">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-dialog">
         <div class="modal-content" if.bind="state.currentlySelectedDetail">
             <div class="modal-header">
-                <h5 class="modal-title" id="deviceDetailModal">${state.currentlySelectedDetail.name}</h5>
+                <h5 class="modal-title">${state.currentlySelectedDetail.name}</h5>
                 <button type="button"
-                        class="btn-close"
+                        class="modal-close"
                         t="[aria-label]actions.close"
-                        click.trigger="modalClosed()"
-                        data-bs-dismiss="modal"></button>
+                        click.trigger="modalClosed()">
+                    <i class="bi bi-x-lg"></i>
+                </button>
             </div>
             <div class="modal-body">
-                <div class="row g-0">
-                    <div class="col-md-5" if.bind="state.currentlySelectedDetail.images && state.currentlySelectedDetail.images.length">
-                        <div class="modal-images p-3">
-                            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner rounded">
-                                    <div repeat.for="image of state.currentlySelectedDetail.images"
-                                         class="carousel-item ${$index === 0 ? 'active' : ''}">
-                                        <img src="images/large-images/${image.src}"
-                                             class="d-block w-100"
-                                             alt="${state.currentlySelectedDetail.name}">
-                                        <div class="image-copyright small text-end mt-2 text-muted"
-                                             if.bind="image.copyright">
-                                            ${image.copyright}
-                                        </div>
-                                    </div>
-                                </div>
-                                <button if.bind="state.currentlySelectedDetail.images.length > 1"
-                                        class="carousel-control-prev"
-                                        type="button"
-                                        data-bs-target="#imageCarousel"
-                                        data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden" t="actions.previous"></span>
-                                </button>
-                                <button if.bind="state.currentlySelectedDetail.images.length > 1"
-                                        class="carousel-control-next"
-                                        type="button"
-                                        data-bs-target="#imageCarousel"
-                                        data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden" t="actions.next"></span>
-                                </button>
-
-                                <div class="carousel-indicators" if.bind="state.currentlySelectedDetail.images.length > 1">
-                                    <button repeat.for="i of state.currentlySelectedDetail.images.length"
-                                            type="button"
-                                            data-bs-target="#imageCarousel"
-                                            data-bs-slide-to="${i}"
-                                            class="${i === 0 ? 'active' : ''}">
-                                    </button>
-                                </div>
+                <div class="modal-grid">
+                    <div class="modal-grid-image" if.bind="state.currentlySelectedDetail.images && state.currentlySelectedDetail.images.length">
+                        <div class="modal-image-container">
+                            <img src="images/large-images/${state.currentlySelectedDetail.images[0].src}"
+                                 class="modal-image"
+                                 alt="${state.currentlySelectedDetail.name}">
+                            <div class="image-copyright"
+                                 if.bind="state.currentlySelectedDetail.images[0].copyright">
+                                ${state.currentlySelectedDetail.images[0].copyright}
                             </div>
                         </div>
                     </div>
 
-                    <div class="${state.currentlySelectedDetail.images && state.currentlySelectedDetail.images.length ? 'col-md-7' : 'col-12'}">
+                    <div class="modal-grid-content">
                         <div class="p-3">
                             <div class="modal-description" if.bind="state.currentlySelectedDetail.description">
                                 <p>${state.currentlySelectedDetail.description}</p>
@@ -151,30 +106,30 @@
 
                             <div class="modal-details" if.bind="state.currentlySelectedDetail.meta && state.currentlySelectedDetail.meta.length">
                                 <h6 t="modal.specifications"></h6>
-                                <dl class="row mb-0">
+                                <dl class="specs-grid">
                                     <template repeat.for="item of state.currentlySelectedDetail.meta">
-                                        <dt class="col-sm-4">${item.label}</dt>
-                                        <dd class="col-sm-8">${item.value}</dd>
+                                        <dt>${item.label}</dt>
+                                        <dd>${item.value}</dd>
                                     </template>
                                 </dl>
                             </div>
 
                             <div class="modal-genres" if.bind="state.currentlySelectedDetail.genres && state.currentlySelectedDetail.genres.length > 0">
                                 <h6 t="modal.perfectFor"></h6>
-                                <div class="d-flex flex-wrap gap-2">
+                                <div class="flex flex-wrap gap-2">
                                     <span repeat.for="genre of state.currentlySelectedDetail.genres"
-                                          class="badge rounded-pill">${genre}</span>
+                                          class="genre-badge">${genre}</span>
                                 </div>
                             </div>
 
-                            <div class="mt-4 d-flex flex-wrap gap-2">
+                            <div class="mt-4 flex flex-wrap gap-2">
                                 <a if.bind="state.currentlySelectedDetail.productLink"
                                    href="${state.currentlySelectedDetail.productLink}"
                                    target="_blank"
                                    rel="noopener"
                                    class="btn btn-primary btn-sm"
                                    external>
-                                    <i class="bi bi-link-45deg me-1"></i>
+                                    <i class="bi bi-link-45deg"></i>
                                     <span t="actions.officialProduct"></span>
                                 </a>
 
@@ -184,7 +139,7 @@
                                    rel="noopener"
                                    class="btn btn-warning btn-sm"
                                    external>
-                                    <i class="bi bi-amazon me-1"></i>
+                                    <i class="bi bi-amazon"></i>
                                     <span t="actions.buyOnAmazon"></span>
                                 </a>
                             </div>
@@ -198,4 +153,4 @@
         </div>
     </div>
 </div>
-<div class="modal-backdrop fade ${state.showDetailsModal ? 'show' : ''}" if.bind="state.showDetailsModal"></div>
+<div class="modal-backdrop" if.bind="state.showDetailsModal"></div>
