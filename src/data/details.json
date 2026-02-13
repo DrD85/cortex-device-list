@@ -211,9 +211,9 @@
         "copyright": "All images and product descriptions are copyright Morley Products Group.",
         "images": [
             {
-                "src": "bad-horsie.jpg",
+                "src": "Bad Horsie Thomann.jpg",
                 "width": "200px",
-                "copyright": "© Morley Products Group"
+                "copyright": "© Thomann"
             }
         ],
         "meta": [
@@ -337,7 +337,13 @@
         "description": "The Klon Centaur is a legendary overdrive pedal designed by Bill Finnegan between 1994 and 2008. Finnegan, working with MIT graduate Fred Fenning, spent over four and a half years developing the circuit to create an overdrive that would emulate the distortion of a tube amplifier at high volume without altering the underlying tone. The Centaur is credited with popularizing 'transparent' overdrives and features a unique dual-ganged gain pot that blends clean and overdriven signals. At low gain it acts as a boost, while higher settings deliver pure distortion. Only around 8,000 units were produced, and the pedal has become highly sought after, with prices reaching $20,000 by 2024.",
         "productLink": "https://en.wikipedia.org/wiki/Klon_Centaur",
         "copyright": "All images and product descriptions are copyright Klon.",
-        "images": [],
+        "images": [            
+            {
+                "src": "klon.webp",
+                "width": "200px",
+                "copyright": "https://www.anatomyoftone.com/home/a-brief-but-complete-guide-to-the-klon-centaur"
+            }
+        ],
         "meta": [
             {
                 "label": "Model",
@@ -372,7 +378,13 @@
         "description": "The Ibanez TS808 Tube Screamer is one of the most iconic overdrive pedals in guitar history. First released in 1979, it was developed by Maxon's Susumu Tamura as a competitor to the Boss OD-1. The name 'Tube Screamer' came when Sammy Ash of Sam Ash Music remarked that the pedal sounded like a 'screaming tube amp.' The TS808 is renowned for its dynamic, touch-sensitive distortion and throaty midrange boost that helps guitars cut through a mix. Its legendary JRC4558D overdrive circuitry, with two diodes in the op-amp feedback loop, was groundbreaking at the time. Stevie Ray Vaughan famously used the TS808 to achieve his trademark juicy strat tone, and it remains one of the most copied and modified overdrive pedals ever made.",
         "productLink": "https://www.ibanez.com/na/products/detail/ts808_99.html",
         "copyright": "All images and product descriptions are copyright Hoshino Gakki Co., Ltd.",
-        "images": [],
+        "images": [
+             {
+                "src": "Ibanez_TS-808_Tube_Screamer_Overdrive_Pro_(True_bypass_Mod_and_Tone_Mod).jpg",
+                "width": "200px",
+                "copyright": "https://commons.wikimedia.org/wiki/File:Ibanez_TS-808_Tube_Screamer_Overdrive_Pro_%28True_bypass_Mod_and_Tone_Mod%29.jpg"
+            }
+        ],
         "meta": [
             {
                 "label": "Model",
@@ -405,9 +417,15 @@
         "brand": "Fulltone",
         "model": "OCD Obsessive Compulsive Drive",
         "description": "The Fulltone OCD (Obsessive Compulsive Drive) is a versatile overdrive pedal first released in 2004. Its unique combination of MOSFET transistors and voltage-controlled clipping delivers remarkably tube-like tones with extraordinary touch sensitivity and dynamic response. The pedal features an HP/LP switch that toggles between British-style tones (High Peak) with an upper-midrange push, and more transparent American-flavored tones (Low Peak). The OCD can run at 18 volts for increased headroom, and includes an internal switch for true bypass or enhanced buffer modes. It has become known for its transparency, power, and versatility across a wide range of gain settings.",
-        "productLink": "https://www.fulltoneusa.com/products/ocd-v2",
-        "copyright": "All images and product descriptions are copyright Fulltone Musical Products, Inc.",
-        "images": [],
+        "productLink": "https://www.thomann.de/gr/fulltone_ocd_v2.htm",
+        "copyright": "All images and product descriptions are copyright Thomann.",
+        "images": [
+              {
+                "src": "Fulltone OCD.jpg",
+                "width": "200px",
+                "copyright": "https://www.thomann.de/gr/fulltone_ocd_v2.htm"
+            } 
+        ],
         "meta": [
             {
                 "label": "Model",
