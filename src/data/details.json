@@ -991,3 +991,45 @@
         ]
     }
 ]
+ },
+    {
+        "id": "britblues",
+        "name": "Marshall® BluesBreaker®",
+        "brand": "Marshall®",
+        "model": "Marshall® BluesBreaker®",
+        "description": "Designed with precision and crafted for quality, the Bluesbreaker carries on the Marshall legacy. Renowned for its straightforward yet impactful design, this pedal seeks to emulate the velvety and warm overdrive tones reminiscent of the iconic Marshall Bluesbreaker amplifier. Having been used on countless stages since its inception in 1992, this pedal has evolved into a coveted collector's item, highly sought after by enthusiasts.",
+        "productLink": "https://www.marshall.com/us/en/product/bluesbreaker-vintage-reissue-pedal?pid=1007074",
+        "copyright": "All images and product descriptions are copyright Marshall.",
+        "images": [
+            mages": [
+            {
+                "src": "Bluesbreaker.jpg",
+                "width": "200",
+                "copyright": "© Marshall"
+            }
+        ],
+        "meta": [
+            {
+                "label": "Model",
+                "value": "Marshall® BluesBreaker®"
+            },
+            {
+                "label": "Gain Tone Volume",
+                "value": "10"
+            },
+            {
+                "label": "Overdrive",
+                "value": "Bluesbreaker"
+            },
+            {
+                "label": "Drive pedal",
+                "value": "Overdrive"
+            }
+        ],
+        "genres": [
+            "Blues",
+            "Rock",
+            "Funk",
+            "80s Rock"
+        ]
+    }
